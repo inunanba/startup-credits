@@ -10,7 +10,7 @@ entity:
       valid_from: 2026-10-08T03:07:56.880Z
   category: marketing
 profile:
-  description: Trackdesk is an affiliate management platform for tracking, managing, and paying affiliate, referral, and influencer programs.
+  description: Trackdesk is an affiliate management platform that businesses and startups use to launch and scale in-house affiliate programs.
   summary: Trackdesk is affiliate management software that helps companies run in-house affiliate programs with tracking, analytics, commissions, and payouts.
   links:
     site: https://trackdesk.com
@@ -30,11 +30,11 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: The discount applies to an annual Business Plan subscription, so the startup purchases that annual subscription at the discounted price.
+        description: The discount is on an annual Business Plan subscription, so the qualified company pays for that annual subscription at the discounted price.
       benefits:
         - benefit_id: ben_01
-          applies_to: Trackdesk Business Plan annual subscription
-          description: 80% off an annual Business Plan subscription
+          applies_to: annual Business Plan subscription
+          description: 80% off the annual Business Plan subscription
           kind: discount
           percentage:
             kind: exact
@@ -43,6 +43,10 @@ offers:
       rule:
         kind: all
         rules:
+          - criterion_id: cri_00
+            kind: manual
+            reason: external-verification
+            statement: Small to medium-sized business looking to scale its in-house affiliate program
           - criterion_id: cri_01
             fact: company.employee_count
             kind: predicate
@@ -62,6 +66,6 @@ offers:
       availability: public
       method: form
       url: https://trackdesk.com/startup-offer
-      instructions: Fill out the qualification form on the Startup Launch Plan page to receive a discount code for the annual Business Plan.
+      instructions: On the Startup Launch Plan page, select See If You Qualify and fill out the form to get your discount code.
     source_ids:
       - src_74469a3b0f865fdb261c2b2222a38dcc89d49121a636e471f7be5e957758efce
