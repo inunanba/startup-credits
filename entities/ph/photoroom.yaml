@@ -1,0 +1,78 @@
+schema_version: sourcey.entity-authoring/v1alpha1
+entity:
+  entity_id: ent_01m5122ghea94sxa38tj9k5gre
+  slug: photoroom
+  slug_aliases: []
+  name: Photoroom
+  domains:
+    - value: photoroom.com
+      role: primary
+      valid_from: 2026-10-16T00:33:58.528Z
+  category: ai-ml
+profile:
+  description: Photoroom is an AI photo editing tool and API for product images, with background removal, AI backgrounds, virtual models, upscaling and other edits.
+  summary: Photoroom makes AI photo editing tools for e-commerce businesses and creators, and offers a photo editing API that developers build into their own apps and websites.
+  links:
+    site: https://www.photoroom.com
+sources:
+  - source_id: src_32fcca886e9353bd00b3f7d37b775389d2a052e8d977dec397c58d4389179d94
+    url: https://www.photoroom.com/api/startup-plan
+programs: []
+offers:
+  - offer_id: off_01m5122ghp1pyzyj608knt3r1x
+    offer_slug: api-startup-plan
+    offer_slug_aliases: []
+    title: Photoroom API Startup Plan
+    summary: Young, lightly funded startups can get 60,000 free Basic Photoroom API images, or the equivalent of 12,000 Plus images, valid for one year after the offer is issued.
+    lifecycle:
+      status: active
+      effective_from: 2026-10-16T00:33:58.528Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 60,000 free Basic Photoroom API images, or the equivalent of 12,000 Plus images, valid for one year after the issue date
+          kind: free-service
+          service: Photoroom API image processing (Basic or Plus)
+          duration:
+            kind: exact
+            value: P1Y
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: Incorporated no more than two years ago
+            value:
+              type: number
+              value: 24
+          - criterion_id: cri_02
+            fact: company.funding_raised_usd
+            kind: predicate
+            operator: lte
+            statement: Raised no more than $1 million in funding
+            value:
+              type: number
+              value: 1000000
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Has never been a recipient of a Photoroom API Startup or Partner plan
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: A marketplace, e-commerce, creativity app or software startup that has signed up for Photoroom and enabled its Photoroom API key
+    roles:
+      terms_authority_entity_id: ent_01m5122ghea94sxa38tj9k5gre
+      access_operator_entity_id: ent_01m5122ghea94sxa38tj9k5gre
+    access:
+      availability: public
+      method: form
+      url: https://www.photoroom.com/api/startup-plan
+      instructions: Sign up for a Photoroom account and enable the Photoroom API, then use Apply Now on the Startup Plan page with your API sign-up email, website or app URL, and the LinkedIn profile of your founders or CEO. Photoroom reviews the submission and, if approved, shares instructions for accessing the plan.
+    source_ids:
+      - src_32fcca886e9353bd00b3f7d37b775389d2a052e8d977dec397c58d4389179d94
