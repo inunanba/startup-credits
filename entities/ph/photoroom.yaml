@@ -11,7 +11,7 @@ entity:
   category: ai-ml
 profile:
   description: Photoroom provides a background remover and AI photo editing API that apps and websites use to create high quality images for product listings, digital campaigns, and brand activations.
-  summary: Photoroom makes AI photo editing tools for e-commerce businesses and creators, and offers a photo editing API that developers build into their own apps and websites.
+  summary: Photoroom offers the Photoroom API, a background remover and AI photo editing API that marketplaces, e-commerce sites, and apps integrate to create high quality images for product listings.
   links:
     site: https://www.photoroom.com
 sources:
