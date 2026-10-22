@@ -63,8 +63,9 @@ offers:
       terms_authority_entity_id: ent_01m5h6yvcc21mctreteprh5pez
       access_operator_entity_id: ent_01m5h6yvcc21mctreteprh5pez
     access:
-      availability: membership
-      method: contact
+      availability: referral
+      method: form
+      url: https://www.zoominfo.com/offers/start-ups
       instructions: Use the Free Trial request on the ZoomInfo for Startups page; startups that raised up to a Series A via an approved incubator, accelerator, or venture capital partner are eligible, and restrictions apply to the 50% pricing.
     source_ids:
       - src_fc11255f4a6d8f210c23328948f7a36044387c2d2455bce4396f83f0290b3689
